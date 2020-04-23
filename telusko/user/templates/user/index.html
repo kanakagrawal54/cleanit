@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'user/loginpage.css' %}" media="screen"/>
+  
+   
+</head>
+<body>
+  <div class="newbody"></div>
+  
+ <div class="container_head" >
+  <div class = "container">
+   <h3 class="heade">About us</h3>
+
+    <p style="padding-left:30px;padding-right:30px;padding-top:40px;color:#fff44f;">Clean Banaega India is a platform where people across India organise themselves in team to clean there nearby places. Any one in India wishing to contribute to the cause can join . Be a proud citizen by doing your duties.</p>
+    
+  </div>
+    <div class="login">
+        <form class="loginform" method="POST"> 
+        {% csrf_token %} 
+                <a class="one" style="text-align:center; color:black;font-size:18px; font-weight: bold;" >Login Id:<br></a>
+          <input type="text" name="firstname" placeholder="Enter Login Id" style="width: 80%; height:25px;margin-top: 8px; margin-bottom: 5px;  border-bottom: 2px solid grey; border-left:none;border-right:none;border-top:none;"><br>
+         <a class="two" style="margin-left: 4px;margin-top:8px;font-size:18px;color:black;font-weight: bold;">Password:<br></a>
+          <input type="password" name="password" placeholder="Enter Password" style="border-bottom: 2px solid black; border-left:none;border-right:none;border-top:none;border-color: grey;width:80%;height:25px;margin-top: 8px;margin-bottom: 5px;"><br>
+          <a href="/signup">loginn</a>
+          <input type="submit">
+         <button class="loginbutton" name="submit">Login</button><br>
+          
+          <p style="color: black;font-size:95%;font-weight: bold;">New User? <a href="#" style="color:green;">Sign Up</a></p>
+          
+
+        </form>
+      </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+{%load static %}
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport"  
+      content="width=device-width, initial-scale=1" /> 
+      <link rel = "stylesheet"
+   type = "text/css"
+   href = "{% static 'posts.css'%}" /> 
+    <title>React App</title>  
+  </head>  
+  <body>  
+     <div class="body">
+            <br/>
+            <form>
+     <input type="text"  id="searchresult" class="searchbar" placeholder="Search the venue"/>
+     </form>
+                <ul class="item">
+                {
+                  
+                        <li key={post.id}>
+                            <div class="innerbox">
+                             
+                                <p class="teamname">Team Name->{{post.teamname}}</p>
+                                 <p class="date">Drive Date->{{post.date}}</p>
+                                 <p class="venue">Drive Venue->{{post.venue}}</p>
+                              <p class="description">Description->{{post.body}}</p>
+                              <button class="btn1 joinbtn">Join</button>
+                            </div>
+                        </li>
+                  
+                }
+                </ul>
+            </div> 
+  </body>  
+</html>  

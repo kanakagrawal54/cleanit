@@ -1,0 +1,251 @@
+body{
+  margin: 0px;
+	font-family:"Avenir Next";
+  background-size:cover;
+  height:100%;
+  background-image:url("background2.jpg");
+  overflow-x:hidden;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+
+.container{
+  background-color:black;
+  font-color:yellow;
+  height: 80px;
+  font-family: "Avenir Next";
+ margin:0px;
+  z-index: 4;
+  position: fixed;
+  width:100%;
+  opacity:1;
+}
+.buttonnav{
+  display: inline-block;
+  float: left;
+}
+.header-left{
+  margin-left:25%;
+  display: inline-block;
+  width:70%;
+  float: left;
+}
+
+.header-left li {
+  float: left;
+  color:white;
+  margin: 0px;
+  padding: 1% 3%;
+
+  float: left;
+  margin: 0px;
+  font-size: 23px;
+  padding-top: 1%;
+ 
+}
+ .header-left a:hover{
+  color:red;
+ }
+.maincontent{
+  height:90%;
+  width:100%;
+}
+.sidenavouter{
+  height:92%;
+  width:20%;
+  float: left;
+  z-index:2;
+  top:60px;
+  left: 0;
+  background-color:#111;
+  position:fixed;
+ 
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 0px;
+  margin-left: 50px;
+}
+.sidenav {
+ height: 100%;
+  width: 100%;
+  float: left;
+  z-index: 0;
+  left: 0;
+  background-color: black;
+ position:absolute;
+ top:0px;
+
+  overflow-y:scroll;
+}
+.sidenav a {
+  margin-top: 10px;
+  padding: 10px 8px 0px 20px;
+  text-align:center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+hr{
+  width:80%;
+ 
+  border-color:grey;
+}
+.profile{
+  margin-top: 0;
+  height:230px;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 20px;
+  background-color:grey;
+}
+h3{
+  color:white;
+}
+
+.profilepic{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:1px solid black;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mainbox{
+  height: 90%;
+  float:left;
+  width:75.5%;
+background-color: blue;
+  display:inline-block;
+margin-left:360px;
+}
+
+
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height:10%;
+  padding: 40px;
+  z-index: 2;
+ width:80%;
+  margin-bottom:0px;
+  margin-left:20%; 
+ 
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
+.openbar{
+ font-size:30px;
+ color:white;
+}
+.buttonnav{
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  width:360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:5;
+  opacity:1;
+  
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:center;
+  opacity:1;
+}
+.dropdown-content a:hover {
+  background-color:red;
+}
+
+
+@media only screen and (max-width:1400px)
+{
+  .sidenavouter{
+    width:360px;
+  }
+}
+@media only screen and (max-width:960px)
+{
+  .header-left{
+    margin-left:10%;
+  }
+  .header-left li{
+    font-size: 19px;
+    padding: 2% 2%;
+  }
+  .sidenavouter{
+    width:300px;
+  }
+}
+@media only screen and (max-width:720px)
+{
+  .header-left li{
+    display: none;
+  }
+  .sidenavouter {
+  height: 90%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 60px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.buttonnav{
+  display: inline-block;
+  padding-top: 20px;
+}
+.openbar{
+
+ margin-left: 20px;
+  font-size: 28px;
+  color:white;
+  cursor: pointer;
+}
+.closemenu{
+  margin-left:85%;
+  font-size: 28px;
+  color:white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.closebtn{
+  font-size: 30px;
+  color: white;
+
+  cursor: pointer;
+}
+}

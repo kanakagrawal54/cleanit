@@ -1,0 +1,75 @@
+body {  
+   margin: 0px;
+ background-image: url("backimgaboutus.jpg");
+ height:100%;
+ width:100%;
+text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+}
+
+.fullbody{
+    margin: 0px;
+ background-image: url("backimgaboutus.jpg");
+ height:100%;
+ width:100%;
+text-align: center;
+padding-top: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+.formcreateteam{
+	width:400px;
+	height:25px;
+	margin:5px; 
+}
+
+.labelform{
+	color:black;
+	font-weight: bold;
+}
+.btn1{
+  background-color:green;
+  width:100px;
+  margin:20px;
+  border:1px solid black;
+  height:50px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 1;
+}
+.btn1:hover {
+  opacity:0.8;
+  background-color:green;
+}
+
+.formbody{
+  background-color:grey;
+  margin: 10 auto 0 auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 500px;
+  padding: 8px;
+  height:450px;
+  padding-left:2%;
+  opacity:0.7;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+ 
+}
+/* Add a background color when the inputs get focus */
+/* Set a style for all buttons */
+.cancelbtn:hover {
+  background-color: #f44336;
+}
+
+
+

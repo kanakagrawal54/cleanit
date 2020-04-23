@@ -1,0 +1,30 @@
+{% extend "base.html" %}
+{% load static %}
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport"  
+      content="width=device-width, initial-scale=1" /> 
+      {% block new_link %}
+       <link rel = "stylesheet" type = "text/css" href ="{% static 'cal/App.css'%}"/> 
+      {% endblock%}
+   {% block title %} <title>React App</title>  {% endblock %}
+  </head>  
+  <body>  
+    <div class="fullbody">
+
+                <img class="imageclean" src="{% static 'cleanindiateampage.jpg'%}" style="width:200px,height:200px;"/>
+                    <h1 >Lets Clean Together</h1> 
+                    <p class="parateampage">
+                        Why go for cleanliness alone when you can go together?<br/>
+                        Bring change with your family and friends.
+                        Create your own teams.
+                    </p> 
+                    
+                   
+                    <button type="submit" onclick="location.href='{% url 'createteam'%}'" class="btn1">Create Team</button>
+                <button type="submit" onclick="location.href='{% url 'jointeam'%}'" class="btn1">Join Team</button>
+            </div>    
+  </body>  
+</html>  

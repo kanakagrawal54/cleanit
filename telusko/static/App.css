@@ -1,0 +1,49 @@
+body {  
+   margin: 0px;
+ height:100%;
+  }
+  * {
+  box-sizing: border-box;
+}
+.fullbody{
+    margin: 0px;
+ background-image: url("backimgaboutus.jpg");
+ height:100%;
+ width:100%;
+text-align: center;
+padding-top: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+.imageclean{
+  border-radius: 50px;
+  border:2px solid black;
+}
+h1{
+  color:yellow;
+}
+
+.parateampage{
+  font-size: 20px;
+  color:white;
+}
+
+.btn1{
+  background-color:green;
+  width:100px;
+  margin:20px;
+  border:1px solid black;
+  height:50px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 1;
+}
+.btn1:hover {
+  opacity:0.8;
+  background-color:green;
+}

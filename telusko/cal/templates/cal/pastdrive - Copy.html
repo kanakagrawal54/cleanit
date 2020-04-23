@@ -1,0 +1,46 @@
+
+{% extends 'cal/base1.html' %}
+
+	{%load static %}
+
+	{% block new_link %}
+	<link rel = "stylesheet" type = "text/css" href="{% static 'cal/pastdrive.css'%}"/>
+	{% endblock %}
+	{% block title %}
+	<title>
+		My Past Drives!
+	</title>
+	{% endblock%}
+	{% block content%}
+	<div class="mainboxall">
+			 <script type="text/javascript" src="base.js"></script>
+			 <script type="text/javascript" src="h1.js"></script>
+         <a class="open" onclick="openNav()">☰</a>  
+		<h1>Welcome Kajujadu!</h1>
+		
+		<div class="futuredrive">
+			<h2>Past Drives</h2>
+
+			 {% for post in posts %}
+
+			 	                 <div class="innerbox mySlides fade">
+                            
+                                <p class="teamname">Team Name->{{post.teamname}}</p>
+                                 <p class="date">Drive Date->{{post.date}}</p>
+                                 <p class="venue">Drive Venue->{{post.venue}}</p>
+                              <p class="description">Description->{{post.body}}</p>
+            
+                            </div>
+               
+                {% endfor %} 
+
+                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ 				 <a class="next" onclick="plusSlides(1)">&#10095;</a>		
+  		</div>
+  			<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	</div>
+	{% endblock %}

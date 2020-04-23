@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+ height:100%;
+  }
+  * {
+  box-sizing: border-box;
+}
+.newbody{
+    margin: 0px;
+  background-image: url("backimgaboutus.jpg");
+ height:100%;
+ width:100%;
+filter: blur(8px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  }
+
+ 
+ .container_head{
+    z-index:2;
+    height:700px;
+    width:1300px;
+  position: absolute;
+  top:5%;
+  left:6%;
+ 
+ }
+  .container{
+  display:inline-block;
+  margin-left:10%;
+  margin-top: 3%;
+  float:left;
+  opacity:0.8;
+   background-color: black;/* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
+
+  width: 45%;
+  height: 550px;
+}
+
+.heade{
+  margin-top:10%;
+  font-weight: bold;
+  color:white;
+  
+  text-align: center;
+ } 
+ .login{ 
+  display: inline-block;
+  margin-top: 3%;
+ 
+  width: 30%;
+  float:left;
+  height:550px;
+  text-align: center;
+  background-color:white;
+   opacity: 0.8;
+
+  
+ }
+ .loginform{
+  
+  padding:20% 10%;
+ }
+ .loginbutton{
+margin-top: 10px; 
+font-weight: bold;
+background-color:grey;
+width: 80%; 
+border:none;
+font-size:18px;
+height:25px;
+opacity:0.8;
+  
+}
+.loginbutton:hover{
+  opacity:1;
+ }
+ .nagi_bar{
+  height:40px;
+  background-color:black;
+  opacity: 0.8;
+  padding:1%1%1%2%;
+  z-index:2;
+
+ }
+ 
+ .kanak{
+  color: lightblue;
+  font-weight: bold;
+  opacity: 0.8;
+  font-size:30px;}
+
+@media screen and (max-width: 499px)
+{  .container{
+  
+   width:90%;
+    height:40%;
+}
+   .login{
+    
+    width:90%;
+    height:40%;
+  }
+  
+}
+@media screen and (min-width: 500px)
+{
+   .container h3{
+    font-size: 40px;
+
+  }
+  .container p{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 650px)
+{
+   .container h3{
+    font-size: 45px;
+
+  }
+  .container p{
+    font-size: 22px;
+  }
+}
+  @media screen and (min-width: 800px)
+{
+   .container h3{
+    font-size: 50px;
+
+  }
+  .container p{
+    font-size: 25px;
+  }
+}

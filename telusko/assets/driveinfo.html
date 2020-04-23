@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport"  
+      content="width=device-width, initial-scale=1" /> 
+      <link rel = "stylesheet"
+   type = "text/css"
+   href = "posts.css" /> 
+    <title>React App</title>  
+  </head>  
+  <body>  
+     <div className="body">
+            <br/>
+            <form>
+     <input type="text"  id="searchresult" className="searchbar" placeholder="Search the venue"/>
+     </form>
+                <ul className="item">
+                {
+                    posts.map(post => (
+                        <li key={post.id}>
+                            <div className="innerbox">
+                             
+                                <p className="teamname">Team Name->{post.teamname}</p>
+                                 <p className="date">Drive Date->{post.date}</p>
+                                 <p className="venue">Drive Venue->{post.venue}</p>
+                              <p className="description">Description->{post.body}</p>
+                              <button className="btn1 joinbtn">Join</button>
+                            </div>
+                        </li>
+                    ))
+                }
+                </ul>
+            </div> 
+  </body>  
+</html>  

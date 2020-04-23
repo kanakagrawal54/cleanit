@@ -1,0 +1,77 @@
+body{
+  margin:0px;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+header {
+  background-color: #47d147;
+  color: #fff;
+  height: 40px;
+  font-family: "Avenir Next";
+  
+  opacity:0.9;
+}
+.logo {
+  float: left;
+  font-size: 36px;
+  height: 30px;
+  width:30px;
+  margin: auto;
+}
+.header-left li {
+  float: left;
+  margin: auto;
+  padding: 5px 20px;
+}
+.home, .my-teams{
+	font-size:25px;
+	color:white;
+}
+.header-right li{
+	float:right;
+	margin:auto;
+	padding:8px 20px;
+}
+.login, .signup, .logout{
+	font-size:20px;
+	color:white;
+	background-color:#00cc00;
+	padding:5px 15px;
+	border-radius:8px;
+}
+.login:hover, .signup:hover, .logout:hover{
+	background-color: #00dd00;
+
+
+}
+.content{
+  height:800px;
+  width:100%;
+}
+.footer {
+  margin:0px;
+  background-color: #2f5167;
+  color: #fff;
+  height: 160px;
+  padding: 20px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+.about{
+	color:white;
+}

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport"  
+      content="width=device-width, initial-scale=1" /> 
+      <link rel = "stylesheet" type = "text/css" href = "{% static 'cal/driveinfo.css'%}" /> 
+    <title>React App</title>  
+  </head>  
+  <body>  
+     <div class="body">
+            <br/>
+      
+            <form method="get" action="/index">
+                  <input type="text"  id="searchresult" class="searchbar" name="searchbar" placeholder="Search by teamname or venue"/>
+                  <button type="submit">Search</button>
+            </form>
+             {% for pot in posts %}
+    
+                <ul class="item">
+                
+                  
+                        <li key={post.id}>
+                            <div class="innerbox">
+                            
+                                <p class="teamname">Team Name->{{pot.teamname}}</p>
+                                 <p class="date">Drive Date->{{pot.date}}</p>
+                                 <p class="venue">Drive Venue->{{pot.venue}}</p>
+                              <p class="description">Description->{{pot.body}}</p>
+                              <button type="submit" onclick="location.href='{% url 'homepage'%}'" class="btn1 joinbtn">Join</button>
+                              
+                            </div>
+                        </li>
+                  
+                
+                </ul>
+          
+                {% endfor %}     
+    </div> 
+  </body>  
+</html>  

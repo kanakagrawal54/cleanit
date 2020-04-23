@@ -1,0 +1,61 @@
+
+{% extends 'cal/base1.html' %}
+
+	{%load static %}
+
+	{% block new_link %}
+	<link rel = "stylesheet" type = "text/css" href="{% static 'cal/pastdrive.css'%}"/>
+	{% endblock %}
+	{% block title %}
+	<title>
+		My profile page!
+	</title>
+	{% endblock%}
+	{% block content%}
+	<div class="mainbody">
+	
+	<div id="myslide" class="sidenav">
+		<div class="profile">
+
+		<img  class="profilepic" src="{% static 'backimgaboutus.jpg'%}">
+		<h3>Kanak Agrawal</h3>
+		</div>
+		<a href="#">Create Team</a>
+		<hr>
+		<a href="#">Join Team</a>
+		<hr>	
+		<a href="/">My Upcoming Drives</a>
+		<hr>
+		<a href="pastdrive/">My Past Drives</a>
+		<hr>
+		<a href="#">About Us</a>
+		<hr>
+		<a href="#">Setting</a>
+		<hr>
+		<a href="#">Help</a>	
+	</div>
+	<div id="main">
+			
+		<h1>Welcome Kajujadu!</h1>
+		<div class="futuredrive">
+			<h2>Upcoming Drives</h2>
+
+			 {% for post in posts %}
+
+			 	                 <div class="innerbox">
+                            
+                                <p class="teamname">Team Name -> {{post.teamname}}</p>
+                                 <p class="date">Drive Date -> {{post.date}}</p>
+                                 <p class="venue">Drive Venue -> {{post.venue}}</p>
+                              <p class="description">Description -> {{post.body}}</p>
+            
+                            </div>
+               
+                {% endfor %}  
+                
+		</div>
+		
+			
+    </div>
+	</div>
+	{% endblock %}

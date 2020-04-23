@@ -1,0 +1,51 @@
+.footerDiv
+
+{
+
+	width:20%;
+
+	margin-left:2%;
+
+	margin-right:2%;
+
+	margin-bottom:0%;
+
+	display: inline-block;
+
+	position: relative;
+
+}
+
+hr{
+
+	width:15%;
+
+}
+
+.upper
+
+{   
+
+	background-color: grey;
+
+	margin-bottom: 0%;
+
+
+
+
+
+}
+
+.lower
+
+{
+
+ margin-top: 0%;
+
+	color:white;
+
+font-size: 12px;
+
+background-color: black;
+
+}

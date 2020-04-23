@@ -1,0 +1,32 @@
+.body{
+	
+	margin: 0px;
+ background-image: url("backimgaboutus.jpg");
+ height:100%;
+ width:100%;
+text-align: center;
+  background-size: cover;
+  background-repeat:repeat;
+  overflow:auto ;
+  position:relative;
+}
+
+.innerbox{margin-left:11%;
+	margin-top:1%;
+	width:30%;
+	float:left;
+	background-color:black;
+	opacity:0.7;
+	overflow: auto;
+	color:yellow;
+	font-size: 18px;
+	margin-bottom: 3%;
+}
+.item{
+	list-style-type: none;
+}
+.searchbar{
+	width:20%;
+	
+	font-size: 18px;
+}
