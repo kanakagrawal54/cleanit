@@ -7,3 +7,4 @@ class NewUserForm(forms.Form):
 	email=forms.EmailField(label='UserEmail')
 	usercity=forms.CharField(label='UserCity',max_length=50)
 	loginpsw=forms.CharField(label='UserPassword',max_length=50)
+	confirmpsw=forms.CharField(label="confirmpassword",max_length=50)
