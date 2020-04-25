@@ -1,10 +1,7 @@
 from django import forms
 
 class NewUserForm(forms.Form):
-	username=forms.CharField(label='UserName', max_length=50)
-	userage=forms.IntegerField(label='UserAge')
-	usergender=forms.CharField(label='UserGender',max_length=20)
-	email=forms.EmailField(label='UserEmail')
-	usercity=forms.CharField(label='UserCity',max_length=50)
-	loginpsw=forms.CharField(label='UserPassword',max_length=50)
-	confirmpsw=forms.CharField(label="confirmpassword",max_length=50)
+	username=forms.CharField(label='User Name', max_length=50, widget=forms.TextInput(attrs={'placeholder':"Enter your name."}))
+	email=forms.EmailField(label='Email',max_length=50,widget=forms.TextInput(attrs={'placeholder':"Enter your Email."}))
+	loginpsw=forms.CharField(label='Password',max_length=50,help_text="Password should be 8 letter long.",widget=forms.PasswordInput(attrs={'placeholder':"Password should be 8 letter long."}))
+	confirmpsw=forms.CharField(label="Confirm password",max_length=50,widget=forms.TextInput(attrs={'placeholder':"Re-enter the password."}))

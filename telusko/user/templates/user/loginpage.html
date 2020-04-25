@@ -11,17 +11,16 @@
    
 </head>
 <body>
-     {% if messages %}
-
+ {% if messages %}
+<div class="errormsg">
   {% for message in messages %}
-  <script>
-    alert("{{ message }}");
-  </script>
-  {% endfor %}
+  <span>{{ message }}</span>
 
+  {% endfor %}
+</div>
   {% endif %}
-  
   <div class="newbody">
+
   <div class = "container">
     <br>
    <h1 class="heade">About us</h1>
@@ -33,6 +32,7 @@
 
         <form class="loginform" method="POST"> 
         {% csrf_token %} 
+        
         <h2 class="loginheader">Clean Banega India</h2>
         <br>
                 <a class="one">Login Id:<br></a>
@@ -44,6 +44,7 @@
           
           <p class="newuser">New User? <a href="signup/" style="color:green;">Sign Up</a></p>
           
+ 
 
         </form>
       </div>
